@@ -1,0 +1,30 @@
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-element-group {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+
+  label {
+    padding: 4px;
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+
+  .button-primary {
+    margin: 16px 0;
+  }
+}

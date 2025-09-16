@@ -1,0 +1,29 @@
+.about-subhead {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 2vh 4vh;
+
+  p {
+    max-width: 900px;
+  }
+}
+
+.desk-photo-wrapper {
+  margin: 0 0 4vh;
+  width: 100%;
+}
+
+.desk-photo {
+  width: 100%;
+}
+
+.flow-about p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0 0 2vh;
+}
+
+.header-about {
+  margin: 4vh 4vh 6vh;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Partial History Creative Studio</title>
+  </head>
+  <body>
+    <nav>
+      <h1><a href="/index.html">Partial History</a></h1>
+      <input id="menu-toggler" type="checkbox" class="menu-toggler" />
+      <label for="menu-toggler" class="show-menu">
+        <span></span>
+      </label>
+      <div class="nav-wrapper">
+        <ul class="nav-items">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="https://jessicadelgrande.com" target="_blank">Portfolio</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="about">
+      <header class="header-about">
+        <h2 class="title-lg center">
+          <span class="highlight">Get in touch</span>
+        </h2>
+      </header>
+      <section class="container-slim group gap-32">
+        <!-- <div class="flex-flow">
+          <figure class="image-wrapper">
+            <img class="headshot" src="/assets/jdg_headshot-cafe.jpg" alt="" />
+          </figure>
+        </div> -->
+        <div class="flex-flow contact-wrapper">
+          <div class="flow-about">
+            <p class="">We would love to hear from you!</p>
+          </div>
+          <div class="form-wrapper">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="35c91145-d454-4127-a49b-a0052baf7ed3"
+              />
+
+              <!-- Form Inputs. Each input must have a name="" attribute -->
+              <div class="form-element-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-element-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-element-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+
+              <!-- Honeypot Spam Protection -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
+
+              <!-- Custom Confirmation / Success Page -->
+              <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+              <button type="submit" class="button-primary">Submit Form</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer bg-black">
+        <div class="footer-container group gap-32">
+          <div class="footer-section grow-2">
+            <p>&copy; Partial History</p>
+            <p>
+              We are a creative studio building websites that showcase your
+              brand and attract your people
+            </p>
+            <p>We use Web3 Forms as our form data processor</p>
+          </div>
+          <div class="footer-section grow-1">
+            <ul>
+              <li>
+                <a href="https://jessicadelgrande.com" target="_blank"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jessicadelgrande/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section grow-1">
+            <ul>
+              <li><a href="/contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
