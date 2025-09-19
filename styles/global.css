@@ -187,12 +187,16 @@ nav {
 .container-chunky {
   border: 0px solid transparent;
   margin-top: -1px;
-  padding: 8rem 4rem;
+  padding: 8rem 2rem;
   position: relative;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   width: 100vw;
   z-index: 10;
+
+  @media screen and (min-width: 900px) {
+    padding: 8rem 4rem;
+  }
 }
 
 .container-full {
