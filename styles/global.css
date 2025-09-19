@@ -152,6 +152,10 @@ nav {
   background: var(--alabaster);
 }
 
+.bg-bisque {
+  background: var(--bisque);
+}
+
 .bg-black {
   background: var(--black);
 }
@@ -175,7 +179,6 @@ nav {
 .bg-vermillion {
   background: var(--vermillion);
 }
-
 
 .center {
   text-align: center;
@@ -269,6 +272,34 @@ nav {
   margin: 8rem 0;
 }
 
+.pill {
+  align-items: center;
+  border: 1px solid var(--vermillion);
+  color: var(--vermillion);
+  display: flex;
+  flex: none;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 3rem;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  list-style: none;
+  margin: 8px 8px 8px 0;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.pill-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  padding: 0;
+}
+
 .skinny-underline {
   border-bottom: 4px solid var(--vermillion);
 }
@@ -283,6 +314,11 @@ nav {
 
 .title-med {
   font-size: 4svw;
+}
+
+.title-sm {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* custom classes */
@@ -358,6 +394,53 @@ h1 {
   }
 }
 
+.header-main {
+  align-items: center;
+  aspect-ratio: 3 / 4;
+  background: var(--alabaster);
+  display: flex;
+  height: 80svh;
+  justify-content: center;
+  line-height: 1;
+  padding: 0rem 2rem 0rem;
+  position: sticky;
+  top: 4rem;
+  width: 100%;
+
+  @media screen and (min-width: 900px) {
+    padding: 4.8rem 4.8rem 12rem;
+  }
+}
+
+.header-main-inner {
+  aspect-ratio: 3 / 4;
+  display: flex;
+  max-height: 80svh;
+  position: relative;
+  width: 100%;
+}
+
+.header-text {
+  font-size: 12vw;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  opacity: 0;
+
+  @media screen and (min-width: 900px) {
+    font-size: 8svw;
+    margin-top: 8rem;
+    max-height: 80svh;
+  }
+}
+
+.header-text-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .headline {
   font-size: 8svw;
   line-height: 1.4;
@@ -388,7 +471,7 @@ h1 {
 .highlight {
   background-color: var(--lime);
   box-decoration-break: clone;
-  font-size: 8vw;
+  font-size: 8svw;
   line-height: 1.3;
   padding: 0;
   
@@ -476,15 +559,20 @@ h1 {
   }
 }
 
-
-
 .text-body {
   font-size: 2.8svw;
 }
 
-@media screen and (min-width: 1200px) {}
-
-@media screen and (min-width: 2000px) {}
-
 /* keyframes and animations */
 
+@keyframes fade {
+  0% {
+    color: transparent;
+    opacity: 0;
+  }
+
+  100% {
+    color: var(--black);
+    opacity: 1;
+  }
+}

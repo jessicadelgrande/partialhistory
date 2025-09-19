@@ -1,5 +1,21 @@
+.about .bio {
+  @media screen and (min-width: 900px) {
+    margin: 16svh 0;
+  }
+}
+
+.about .contact-link {
+  @media screen and (min-width: 900px) {
+    margin-bottom: 16svh;
+  }
+}
+
+.about .header-main {
+  position: static;
+}
+
 .about-subhead {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   margin: 2vh 2vh 4vh;
@@ -7,6 +23,16 @@
   p {
     max-width: 900px;
   }
+}
+
+.about .title-lg {
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  line-height: 1.2;
+  margin-top: 8rem;
+  opacity: 0;
 }
 
 .desk-photo-wrapper {

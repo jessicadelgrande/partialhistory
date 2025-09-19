@@ -3,53 +3,6 @@
   color: var(--vermillion);
 }
 
-.header-main {
-  align-items: center;
-  aspect-ratio: 3 / 4;
-  background: var(--alabaster);
-  display: flex;
-  height: 80svh;
-  justify-content: center;
-  line-height: 1;
-  padding: 0rem 2rem 0rem;
-  position: sticky;
-  top: 4rem;
-  width: 100%;
-
-  @media screen and (min-width: 900px) {
-    padding: 4.8rem 4.8rem 12rem;   
-  }
-}
-
-.header-main-inner {
-  aspect-ratio: 3 / 4;
-  display: flex;
-  max-height: 80svh;
-  position: relative;
-  width: 100%;
-}
-
-.header-text {
-  font-size: 12vw;
-  animation-delay: 0.5s;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-name: fade;
-  opacity: 0;
-
-  @media screen and (min-width: 900px) {
-    font-size: 8svw;
-    margin-top: 8rem;
-    max-height: 80svh;
-  }
-}
-
-.header-text-wrapper {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 /* keyframes and animations */
 
 @keyframes color-change {
@@ -75,17 +28,5 @@
 
   90% {
     color: var(--vermillion);
-  }
-}
-
-@keyframes fade {
-  0% {
-    color: transparent;
-    opacity: 0;
-  }
-
-  100% {
-    color: var(--black);
-    opacity: 1;
   }
 }
